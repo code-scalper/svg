@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-stone-800 text-white w-screen p-5">
+      <div>
+        <h1 class="hidden">SVG Practice</h1>
+
+        <div class="mt-5">
+          <div>
+            <label class="block mb-2 text-sm font-medium dark:text-white"
+              >Select a shape!</label
+            >
+            <select
+              id="select-shape"
+              class="bg-emerald-700 text-white text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5 w-40 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            >
+              <option value="circle">circle</option>
+              <option value="rect">rect</option>
+              <option value="ellipse">ellipse</option>
+              <option value="line">line</option>
+              <option value="polyline">polyline</option>
+              <option value="polygon">polygon</option>
+              <option value="path">path</option>
+            </select>
+          </div>
+
+          <ul
+            target="circle"
+            class="mt-5 text-white grid grid-cols-7 gap-x-3 gap-y-7 max-lg:grid-cols-5 max-md:grid-cols-4 max-sm:grid-cols-2 [&>li]:h-7 [&>li>input]:bg-stone-600 [&>li>input]:p-1 [&>li>input]:rounded-sm [&>li>input]:w-full"
+          >
+            <li>
+              <label>width</label>
+              <input type="text" attr="width" />
+            </li>
+
+            <li>
+              <label>height</label>
+              <input type="text" attr="height" />
+            </li>
+            <li>
+              <label>x</label>
+              <input type="text" attr="x" />
+            </li>
+            <li>
+              <label>y</label>
+              <input type="text" attr="y" />
+            </li>
+            <li>
+              <label>rx</label>
+              <input type="text" attr="rx" />
+            </li>
+            <li>
+              <label>ry</label>
+              <input type="text" attr="ry" />
+            </li>
+            <li>
+              <label>cx</label>
+              <input type="text" attr="cx" />
+            </li>
+            <li>
+              <label>cy</label>
+              <input type="text" attr="cy" />
+            </li>
+            <li>
+              <label>r</label>
+              <input type="text" attr="r" />
+            </li>
+            <li>
+              <label>stroke</label>
+              <input type="text" attr="stroke" />
+            </li>
+            <li>
+              <label>stroke-width</label>
+              <input type="text" attr="stroke-width" />
+            </li>
+            <li>
+              <label>fill</label>
+              <input type="text" attr="fill" />
+            </li>
+            <li>
+              <label>x1</label>
+              <input type="text" attr="x1" />
+            </li>
+            <li>
+              <label>y1</label>
+              <input type="text" attr="y1" />
+            </li>
+            <li>
+              <label>x2</label>
+              <input type="text" attr="x2" />
+            </li>
+            <li>
+              <label>y2</label>
+              <input type="text" attr="y2" />
+            </li>
+            <li>
+              <label>points</label>
+              <input type="text" attr="points" />
+            </li>
+
+            <li>
+              <label>d</label>
+              <input type="text" attr="d" />
+            </li>
+            <li>
+              <label>fill-rule</label>
+              <input type="text" attr="fill-rule" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="w-full bg-stone-600 rounded-xl mt-14 min-h-[400px] h-[400px] p-2"
+      >
+        <p>Play Ground</p>
+        <svg class="w-full h-full">
+          <circle id="circle" />
+          <rect id="rect" />
+          <ellipse id="ellipse" />
+          <line id="line" />
+          <polyline id="polyline" />
+          <polygon id="polygon" />
+          <path id="path" />
+        </svg>
+      </div>
+
+      <div
+        class="w-full bg-stone-600 rounded-xl mt-10 min-h-[400px] h-[400px] p-2"
+      >
+        <p>Practice Section</p>
+        <div class="w-full h-full">
+          <svg></svg>
+        </div>
+      </div>
+    </div>
+    <script src="svg.js"></script>
+  </body>
+</html>
